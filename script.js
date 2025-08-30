@@ -57,7 +57,7 @@ function homeView() {
           {t:"Rosemary",d:"Stimulates scalp, supports thicker-looking hair."},
           {t:"Aloe Vera",d:"Soothes dryness and hydrates roots."},
           {t:"Vitamin E",d:"Protects from damage and adds shine."},
-          {t:"Mustard seeds",d:"Smoothens and a good source of vitamin E."},
+          {t:"Fenugreek seeds",d:"Smoothens and a good source of vitamin E."},
         ].map(i=>`<div class="card"><div class="badge">🍃</div><h3 style="margin:.4rem 0">${i.t}</h3><p class="muted">${i.d}</p></div>`).join('')}
       </div>
     </div>
