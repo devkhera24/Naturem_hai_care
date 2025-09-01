@@ -57,7 +57,7 @@ function homeView() {
         ${[
           {n:"Garvit Sachdeva",r:"Production Manager"},
           {n:"Dev Khera",r:"Tech & Sales Manager"},
-          {n:"Parth Pethia",r:"Marketing Manager"},
+          {n:"Parth Pethia",r:"Branding Manager"},
           {n:"Abhinav Agarwal",r:"Logistics"},
           {n:"Arpit Baliyan",r:"Strategy Manager"},
         ].map(m=>`
@@ -161,7 +161,7 @@ function contactView(){
         ${[
           {n:"Garvit Sachdeva",r:"Production Manager"},
           {n:"Dev Khera",r:"Tech & Sales Manager"},
-          {n:"Parth Pethia",r:"Marketing Manager"},
+          {n:"Parth Pethia",r:"Branding Manager"},
           {n:"Abhinav Agarwal",r:"Logistics"},
           {n:"Arpit Baliyan",r:"Strategy Manager"},
         ].map(m=>`
