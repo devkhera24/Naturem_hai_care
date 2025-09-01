@@ -172,7 +172,6 @@ function contactView(){
     </div>
   </section>`;
 }
-}
 function notFoundView(){
   return `<section class="section"><div class="container"><h1>404</h1><p class="muted">Page not found.</p><a class="btn" href="#/">Go Home</a></div></section>`;
 }
