@@ -7,8 +7,6 @@ const nav = document.querySelector(".nav");
 navToggle.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
-
-
 // ---- ROUTES ----
 const routes = {
   "/": homeView,        // home available at #/
