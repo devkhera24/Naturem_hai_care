@@ -55,15 +55,13 @@ function homeView() {
     <p class="muted" style="margin-bottom:1.2rem">The minds and hands behind Naturem.</p>
     <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem">
       ${[
-        {n:"Garvit Sachdeva",r:"Production Manager",img:"Garvit.jpg"},
-        {n:"Dev Khera",r:"Tech & Sales Manager",img:"Devnaturem.jpg"},
-        {n:"Parth Pethia",r:"Branding Manager",img:"Parth.jpg"},
-        {n:"Abhinav Agarwal",r:"Logistics",img:"Abhinav.jpg"},
-        {n:"Arpit Baliyan",r:"Strategy Manager",img:"Arpit.jpg"},
+        {n:"Garvit Sachdeva",r:"Production Manager"},
+        {n:"Dev Khera",r:"Tech & Sales Manager"},
+        {n:"Parth Pethia",r:"Branding Manager"},
+        {n:"Abhinav Agarwal",r:"Logistics"},
+        {n:"Arpit Baliyan",r:"Strategy Manager"},
       ].map(m=>`
-        <div class="card" style="text-align:center">
-          <img src="${m.img}" alt="${m.n}"
-            style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:.6rem">
+        <div class="card" style="text-align:center;padding:1rem;border:1px solid #ddd;border-radius:12px">
           <h3 style="margin:0;font-size:1rem">${m.n}</h3>
           <p class="muted" style="font-size:.85rem">${m.r}</p>
         </div>
@@ -71,6 +69,7 @@ function homeView() {
     </div>
   </div>
 </section>
+
 
   <section class="section">
     <div class="container">
@@ -160,15 +159,13 @@ function contactView(){
     <p class="muted" style="margin-bottom:1.2rem">The minds and hands behind Naturem.</p>
     <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem">
       ${[
-        {n:"Garvit Sachdeva",r:"Production Manager",img:"Garvit.jpg"},
-        {n:"Dev Khera",r:"Tech & Sales Manager",img:"Devnaturem.jpg"},
-        {n:"Parth Pethia",r:"Branding Manager",img:"Parth.jpg"},
-        {n:"Abhinav Agarwal",r:"Logistics",img:"Abhinav.jpg"},
-        {n:"Arpit Baliyan",r:"Strategy Manager",img:"Arpit.jpg"},
+        {n:"Garvit Sachdeva",r:"Production Manager"},
+        {n:"Dev Khera",r:"Tech & Sales Manager"},
+        {n:"Parth Pethia",r:"Branding Manager"},
+        {n:"Abhinav Agarwal",r:"Logistics"},
+        {n:"Arpit Baliyan",r:"Strategy Manager"},
       ].map(m=>`
-        <div class="card" style="text-align:center">
-          <img src="${m.img}" alt="${m.n}"
-            style="width:120px;height:120px;border-radius:50%;object-fit:cover;margin-bottom:.6rem">
+        <div class="card" style="text-align:center;padding:1rem;border:1px solid #ddd;border-radius:12px">
           <h3 style="margin:0;font-size:1rem">${m.n}</h3>
           <p class="muted" style="font-size:.85rem">${m.r}</p>
         </div>
@@ -176,6 +173,7 @@ function contactView(){
     </div>
   </div>
 </section>
+
 }
 function notFoundView(){
   return `<section class="section"><div class="container"><h1>404</h1><p class="muted">Page not found.</p><a class="btn" href="#/">Go Home</a></div></section>`;
