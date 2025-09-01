@@ -15,7 +15,6 @@ const routes = {
   "/products": productsView,
   "/contact": contactView,
 };
-
 // ---- VIEWS ----
 function homeView() {
   return `
