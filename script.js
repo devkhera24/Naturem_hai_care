@@ -48,6 +48,29 @@ function homeView() {
     </div>
   </section>
 
+  <!-- 🔥 TEAM SECTION ADDED -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size:1.8rem;margin-bottom:.5rem">Meet Our Team</h2>
+      <p class="muted" style="margin-bottom:1.2rem">The minds and hands behind Naturem.</p>
+      <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem">
+        ${[
+          {n:"Garvit Sachdeva",r:"Production Manager"},
+          {n:"Dev Khera",r:"Tech & Sales Manager"},
+          {n:"Parth Pethia",r:"Marketing Manager"},
+          {n:"Abhinav Agarwal",r:"Logistics"},
+          {n:"Arpit Baliyan",r:"Strategy Manager"},
+        ].map(m=>`
+          <div class="card" style="text-align:center">
+            <div style="width:100%;aspect-ratio:1/1;border-radius:12px;background:#eee;margin-bottom:.6rem;display:grid;place-items:center;font-size:2rem">📸</div>
+            <h3 style="margin:0;font-size:1rem">${m.n}</h3>
+            <p class="muted" style="font-size:.85rem">${m.r}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
   <section class="section">
     <div class="container">
       <h2 style="font-size:1.8rem;margin-bottom:.5rem">Powered by nature</h2>
@@ -63,6 +86,7 @@ function homeView() {
     </div>
   </section>`;
 }
+
 
 function aboutView(){
   const t = [
@@ -127,9 +151,30 @@ function contactView(){
         </ul>
       </div>
     </div>
+  </section>
+
+  <!-- 🔥 TEAM SECTION ADDED -->
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size:1.8rem;margin-bottom:.5rem">Our Team</h2>
+      <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem">
+        ${[
+          {n:"Garvit Sachdeva",r:"Production Manager"},
+          {n:"Dev Khera",r:"Tech & Sales Manager"},
+          {n:"Parth Pethia",r:"Marketing Manager"},
+          {n:"Abhinav Agarwal",r:"Logistics"},
+          {n:"Arpit Baliyan",r:"Strategy Manager"},
+        ].map(m=>`
+          <div class="card" style="text-align:center">
+            <div style="width:100%;aspect-ratio:1/1;border-radius:12px;background:#eee;margin-bottom:.6rem;display:grid;place-items:center;font-size:2rem">📸</div>
+            <h3 style="margin:0;font-size:1rem">${m.n}</h3>
+            <p class="muted" style="font-size:.85rem">${m.r}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
   </section>`;
 }
-
 function notFoundView(){
   return `<section class="section"><div class="container"><h1>404</h1><p class="muted">Page not found.</p><a class="btn" href="#/">Go Home</a></div></section>`;
 }
