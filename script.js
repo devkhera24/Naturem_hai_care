@@ -118,7 +118,6 @@ function aboutView(){
 function productsView(){
   const ps = [
     {name:"Hair Serum — 100 ml",desc:"Full-size bottle for a complete 4–6 week routine.",size:"100ml",priceBlr:100},
-    {name:"Hair Serum — 50 ml",desc:"Travel-size or trial bottle for 2–3 weeks.",size:"50ml",priceBlr:79},
   ];
   return `
   <section class="section"><div class="container">
