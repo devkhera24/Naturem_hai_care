@@ -150,28 +150,48 @@ function contactView(){
     </div>
   </section>
 
-  <!-- 🔥 TEAM SECTION ADDED -->
+  <!-- Team Section -->
   <section class="section">
     <div class="container">
       <h2 style="font-size:1.8rem;margin-bottom:.5rem">Our Team</h2>
       <div class="products" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1rem">
-        ${[
-          {n:"Garvit Sachdeva",r:"Production Manager"},
-          {n:"Dev Khera",r:"Tech & Sales Manager"},
-          {n:"Parth Pethia",r:"Marketing Manager"},
-          {n:"Abhinav Agarwal",r:"Logistics"},
-          {n:"Arpit Baliyan",r:"Strategy Manager"},
-        ].map(m=>`
-          <div class="card" style="text-align:center">
-            <div style="width:100%;aspect-ratio:1/1;border-radius:12px;background:#eee;margin-bottom:.6rem;display:grid;place-items:center;font-size:2rem">📸</div>
-            <h3 style="margin:0;font-size:1rem">${m.n}</h3>
-            <p class="muted" style="font-size:.85rem">${m.r}</p>
-          </div>
-        `).join('')}
+        
+        <div class="card" style="text-align:center">
+          <img src="https://via.placeholder.com/150" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.6rem;" />
+          <h3 style="margin:0;font-size:1rem">Garvit Sachdeva</h3>
+          <p class="muted" style="font-size:.85rem">Production Manager</p>
+        </div>
+        
+        <div class="card" style="text-align:center">
+          <img src="https://via.placeholder.com/150" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.6rem;" />
+          <h3 style="margin:0;font-size:1rem">Dev Khera</h3>
+          <p class="muted" style="font-size:.85rem">Tech & Sales Manager</p>
+        </div>
+        
+        <div class="card" style="text-align:center">
+          <img src="https://via.placeholder.com/150" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.6rem;" />
+          <h3 style="margin:0;font-size:1rem">Parth Pethia</h3>
+          <p class="muted" style="font-size:.85rem">Marketing Manager</p>
+        </div>
+        
+        <div class="card" style="text-align:center">
+          <img src="https://via.placeholder.com/150" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.6rem;" />
+          <h3 style="margin:0;font-size:1rem">Abhinav Agarwal</h3>
+          <p class="muted" style="font-size:.85rem">Logistics</p>
+        </div>
+        
+        <div class="card" style="text-align:center">
+          <img src="https://via.placeholder.com/150" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:.6rem;" />
+          <h3 style="margin:0;font-size:1rem">Arpit Baliyan</h3>
+          <p class="muted" style="font-size:.85rem">Strategy Manager</p>
+        </div>
+        
       </div>
     </div>
-  </section>`;
+  </section>
+  `;
 }
+
 function notFoundView(){
   return `<section class="section"><div class="container"><h1>404</h1><p class="muted">Page not found.</p><a class="btn" href="#/">Go Home</a></div></section>`;
 }
